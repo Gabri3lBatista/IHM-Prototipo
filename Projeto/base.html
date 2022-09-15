@@ -32,7 +32,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon">
-                    <img src="{% static 'img/logo-acad-sm.png' %}" alt="" width="50" height="50">
+                    <img src="img/logo-acad-sm.png" alt="" width="50" height="50">
                 </div>
                 <div class="sidebar-brand-text mx-3">Academia Objetivo</div>
             </a>
@@ -41,7 +41,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item collapsed">
+            <li class="nav-item ">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Gerenciar</span>
@@ -49,9 +49,9 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Registrar:</h6>
-                        <a class="collapse-item" href="../cadastro-equipamento/">Máquinas</a>
-                        <a class="collapse-item" href="../cadastro-treino">Treinos</a>
-                        <a class="collapse-item" href="../cadastro-cliente/">Pessoas</a>
+                        <a class="collapse-item" href="#">Máquinas</a>
+                        <a class="collapse-item" href="#">Treinos</a>
+                        <a class="collapse-item" href="#">Pessoas</a>
                         <div class="collapse-divider"></div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 -top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -121,7 +121,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
-                            <!-- Dropdown - Messages -->
+                            <!-- Dropdown - Messages 
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
@@ -137,6 +137,7 @@
                                     </div>
                                 </form>
                             </div>
+                            -->
                         </li>
 
                         <!-- Nav Item - Alerts 
@@ -191,15 +192,16 @@
                             </div>
                         </li>
 
-                        <!-- Nav Item - Messages -->
+                        <!-- Nav Item - Messages 
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
+                                <!-- Counter - Messages 
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
-                            <!-- Dropdown - Messages -->
+                            -->
+                            <!-- Dropdown - Messages 
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
@@ -255,7 +257,9 @@
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
+                            -->
                         </li>
+                        
 
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
@@ -264,7 +268,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle"
-                                    src="../staticfiles/img/undraw_profile.svg">
+                                    src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -307,7 +311,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Academia Objetivo 2022</span>
                     </div>
                 </div>
             </footer>
@@ -337,21 +341,21 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="{% url 'logout' %}" >Logout</a>
+                    <a class="btn btn-primary" href="{% url 'logout'" >Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src={% static "vendor/jquery/jquery.min.js" %}></script>
-    <script src={% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+    <script src= "vendor/jquery/jquery.min.js"></script>
+    <script src= "vendor/bootstrap/js/bootstrap.bundle.min.js" ></script>
 
     <!-- Core plugin JavaScript-->
-    <script src={% static "vendor/jquery-easing/jquery.easing.min.js" %}></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src={% static "js/sb-admin-2.min.js" %}></script>
+    <script src="js/sb-admin-2.min.js"></script>
 
     
     <!-- Page level plugins -->
