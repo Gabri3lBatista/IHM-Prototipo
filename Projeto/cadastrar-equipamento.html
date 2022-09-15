@@ -49,7 +49,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Registrar:</h6>
-                        <a class="collapse-item" href="#">Máquinas</a>
+                        <a class="collapse-item" href="#">Equipamentos</a>
                         <a class="collapse-item" href="#">Treinos</a>
                         <a class="collapse-item" href="#">Pessoas</a>
                         <div class="collapse-divider"></div>
@@ -257,16 +257,16 @@
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
-                            -->
+                            
                         </li>
+                        -->
                         
-
                         <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
@@ -300,7 +300,63 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Cadastro de Equipamento</h1>
+                    <form class="form-signin">
+
+                        <div class="form-label-group">
+                            <label for="inputEmail">Nome do Equipamento</label>
+                            <input type="text" id="inputEmail" class="form-control" placeholder="Digite o nome completo" required autofocus style="display: block; width: 600px;">
+                        </div>
+                        <br>
+                        <div class="form-label-group">
+                            <label for="inputEmail">Descrição</label>
+                            <input type="tel" id="" class="form-control" placeholder="Digite o telefone" required autofocus style="display: block; width: 600px;">
+                        </div>
+                        <br>
+                        <div class="form-label-group">
+                            <label for="inputEmail">Status</label>
+                            <input type="text" id="inputEmail" class="form-control" placeholder="Digite o endereço de email" required autofocus style="display: block; width: 600px;">
+                        </div>
+                        <br>
+                        <div class="form-label-group">
+                            <label for="inputPassword">Imagem</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Digite a senha" required style="display: block; width: 600px;">
+                        </div>
+                        <br>
+
+                        <!-- 
+                        <div class="checkbox mb-3">
+                          <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                          </label>
+                        </div>
+                        -->
+                        <button class="btn btn-lg btn-primary btn-block" type="button" style="display: block; width: 200px; margin-left: 400px; " data-toggle="modal" data-target="#myModal"><i class="fa fa-save" aria-hidden="true"></i> Cadastrar</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog" >
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        
+                                    </div>
+                                    <div class="modal-body">
+                                                                        
+                                        <h1 class="modal-title">Aluno cadastrado com sucesso!</h1>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default font-weight-light" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        <button class="btn btn-lg btn-secondary btn-block" type="" style="display: block; width: 120px; margin-left: 268px; margin-top: -48px;"><i class="fa fa-arrow-left"></i> Voltar</button>
+
+                        <p class="mt-5 mb-3 text-muted text-center">&copy; 2022</p>
+
+                      </form>
                 </div>
                 <!-- /.container-fluid -->
 
